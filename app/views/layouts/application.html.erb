@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>ZjPersonalSite</title>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <%= csrf_meta_tags %>
+
+   <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+   <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
+
+ </head>
+ <body>
+  <img src="/assets/images/logo.jpg" class="logo"/>
+  <%= yield %>
+  
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+ </body>
+</html>
